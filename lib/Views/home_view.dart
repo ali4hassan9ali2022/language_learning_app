@@ -17,21 +17,29 @@ class HomeView extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: const Column(
+      body:  Column(
         children: [
           CustomCategory(
+            onTap: () {
+              
+            },
             text: "Numbers",
-            color: Color(0xffEF9235),
+            color: const Color(0xffEF9235),
           ),
           CustomCategory(
+            onTap: () {
+              
+            },
             text: "FamilyMembers",
             color: const Color(0xff558B37),
           ),
           CustomCategory(
+            onTap: (){},
             text: "Colors",
             color: const Color(0xff79359F),
           ),
           CustomCategory(
+            onTap: (){},
             text: 'Phrases',
             color: const Color(0xff50ADC7),
           ),
