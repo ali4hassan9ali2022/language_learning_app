@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:language_learning_app/Models/item_model.dart';
 import 'package:language_learning_app/Widgets/list_item.dart';
 
-class FamilyMemebersView extends StatelessWidget {
-  const FamilyMemebersView({super.key});
-  final List<ItemModel> familyMemebers = const [
+class ColorsView extends StatelessWidget {
+  const ColorsView({super.key});
+  final List<ItemModel> colors = const [
     ItemModel(
       sound: 'sounds/family_members/father.wav',
       jpName: 'chich',
@@ -72,17 +72,17 @@ class FamilyMemebersView extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xff46322B),
         title: const Text(
-          "FamilyMemebers",
+          "Colors",
           style: TextStyle(
             color: Colors.white,
           ),
         ),
       ),
       body: ListView.builder(
-        itemCount: familyMemebers.length,
+        itemCount: colors.length,
         itemBuilder: (context, index) {
           return ListItem(
-              color: const Color(0xff558B37), item: familyMemebers[index]);
+              color: const Color(0xff79359F), item: colors[index]);
         },
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:language_learning_app/Views/colors_view.dart';
 import 'package:language_learning_app/Views/family_memebers.dart';
 import 'package:language_learning_app/Views/numbers_view.dart';
 import 'package:language_learning_app/Widgets/custom_category.dart';
@@ -38,7 +39,7 @@ class HomeView extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const FamilyMemebers(),
+                  builder: (context) => const FamilyMemebersView(),
                 ),
               );
             },
@@ -46,7 +47,14 @@ class HomeView extends StatelessWidget {
             color: const Color(0xff558B37),
           ),
           CustomCategory(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ColorsView(),
+                ),
+              );
+            },
             text: "Colors",
             color: const Color(0xff79359F),
           ),
