@@ -5,6 +5,16 @@ class NumbersView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color(0xff46322B),
+        title: const Text(
+          "Numbers",
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+      ),
+    );
   }
 }
