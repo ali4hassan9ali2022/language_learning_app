@@ -81,7 +81,7 @@ class NumbersView extends StatelessWidget {
       body: ListView.builder(
         itemCount: numbers.length,
         itemBuilder: (context, index) {
-          return ListItem(item: numbers[index]);
+          return ListItem(color: const Color(0xffEF9235) , item: numbers[index]);
         },
       ),
     );

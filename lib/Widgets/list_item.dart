@@ -4,14 +4,15 @@ import 'package:language_learning_app/Models/item_model.dart';
 class ListItem extends StatelessWidget {
   const ListItem({
     super.key,
-    required this.item,
+    required this.item, required this.color,
   });
   final ItemModel item;
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 95,
-      color: const Color(0xffEF9235),
+      color: color,
       child: Row(
         children: [
           Container(
