@@ -20,6 +20,27 @@ class LanguageLearningApp extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
         ),
+        body: Column(
+          children: [
+            Container(
+              alignment: Alignment.centerLeft,
+              height: 65,
+              width: double.infinity,
+              color: const Color(0xffEF9235),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 16),
+                child: Text(
+                  "Numbers",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
