@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:language_learning_app/Widgets/list_item.dart';
 
 class NumbersView extends StatelessWidget {
   const NumbersView({super.key});
@@ -15,6 +16,7 @@ class NumbersView extends StatelessWidget {
           ),
         ),
       ),
+      body: const ListItem(),
     );
   }
 }
