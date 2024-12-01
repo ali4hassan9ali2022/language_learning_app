@@ -81,7 +81,7 @@ class PhrasesView extends StatelessWidget {
       body: ListView.builder(
         itemCount: phrases.length,
         itemBuilder: (context, index) {
-          return ListItem(
+          return PhrasesItem(
               color: const Color(0xff50ADC7), item: phrases[index]);
         },
       ),
