@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:language_learning_app/Models/item_model.dart';
 
 class ListItem extends StatelessWidget {
   const ListItem({
     super.key,
+    required this.item,
   });
-
+  final ItemModel item;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -14,23 +16,23 @@ class ListItem extends StatelessWidget {
         children: [
           Container(
             color: const Color(0xffFFF6DC),
-            child: Image.asset("assets/images/numbers/number_one.png"),
+            child: Image.asset(item.image!),
           ),
-          const Padding(
-            padding: EdgeInsets.only(left: 16),
+          Padding(
+            padding: const EdgeInsets.only(left: 16),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Icho",
-                  style: TextStyle(
+                  item.jpName,
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 18,
                   ),
                 ),
                 Text(
-                  "One",
-                  style: TextStyle(
+                  item.enName,
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 18,
                   ),
@@ -40,7 +42,9 @@ class ListItem extends StatelessWidget {
           ),
           const Spacer(),
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                item.playSound();
+              },
               icon: const Icon(
                 Icons.play_arrow,
                 size: 38,
