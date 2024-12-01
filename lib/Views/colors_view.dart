@@ -6,64 +6,40 @@ class ColorsView extends StatelessWidget {
   const ColorsView({super.key});
   final List<ItemModel> colors = const [
     ItemModel(
-      sound: 'sounds/family_members/father.wav',
-      jpName: 'chich',
-      enName: 'father',
-      image: 'assets/images/family_members/family_father.png',
+      sound: 'black.wav',
+      jpName: 'Burakku',
+      enName: 'black',
+      image: 'assets/images/colors/color_black.png',
     ),
     ItemModel(
-      sound: 'sounds/family_members/daughter.wav',
-      jpName: 'musume',
-      enName: 'daughter',
-      image: 'assets/images/family_members/family_daughter.png',
+      sound: 'brown.wav',
+      jpName: 'Chairo',
+      enName: 'brown',
+      image: 'assets/images/colors/color_brown.png',
     ),
     ItemModel(
-      sound: 'sounds/family_members/grand father.wav',
-      jpName: 'sofu',
-      enName: 'grandfather',
-      image: 'assets/images/family_members/family_grandfather.png',
+      sound: 'dusty yellow.wav',
+      jpName: 'Hokori ppoi kiiro',
+      enName: 'dusty yellow',
+      image: 'assets/images/colors/color_dusty_yellow.png',
     ),
     ItemModel(
-      sound: 'sounds/family_members/grand mother.wav',
-      jpName: 'haha',
-      enName: 'mother',
-      image: 'assets/images/family_members/family_mother.png',
+      sound: 'gray.wav',
+      jpName: 'Gurē',
+      enName: 'gray',
+      image: 'assets/images/colors/color_gray.png',
     ),
     ItemModel(
-      sound: 'sounds/family_members/mother.wav',
-      jpName: 'sobo',
-      enName: 'grandmother',
-      image: 'assets/images/family_members/family_grandmother.png',
+      sound: 'green.wav',
+      jpName: 'Midori',
+      enName: 'green',
+      image: 'assets/images/colors/color_green.png',
     ),
     ItemModel(
-      sound: 'sounds/family_members/older bother.wav',
-      jpName: 'ani',
-      enName: 'older brother',
-      image: 'assets/images/family_members/family_older_brother.png',
-    ),
-    ItemModel(
-      sound: 'sounds/family_members/older sister.wav',
-      jpName: 'ane',
-      enName: 'older sister',
-      image: 'assets/images/family_members/family_older_sister.png',
-    ),
-    ItemModel(
-      sound: 'sounds/family_members/son.wav',
-      jpName: 'musuko',
-      enName: 'son',
-      image: 'assets/images/family_members/family_son.png',
-    ),
-    ItemModel(
-      sound: 'sounds/family_members/younger brohter.wav',
-      jpName: 'otouto',
-      enName: 'younger brother',
-      image: 'assets/images/family_members/family_younger_brother.png',
-    ),
-    ItemModel(
-      sound: 'sounds/family_members/younger sister.wav',
-      jpName: 'imouto',
-      enName: 'younger sister',
-      image: 'assets/images/family_members/family_younger_sister.png',
+      sound: 'red.wav',
+      jpName: 'Aka',
+      enName: 'red',
+      image: 'assets/images/colors/color_red.png',
     ),
   ];
   @override
@@ -81,8 +57,7 @@ class ColorsView extends StatelessWidget {
       body: ListView.builder(
         itemCount: colors.length,
         itemBuilder: (context, index) {
-          return ListItem(
-              color: const Color(0xff79359F), item: colors[index]);
+          return ListItem(color: const Color(0xff79359F), item: colors[index]);
         },
       ),
     );
