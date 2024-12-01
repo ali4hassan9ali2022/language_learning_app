@@ -11,8 +11,16 @@ class LanguageLearningApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
-      home: const Scaffold(),
+      home: Scaffold(
+        backgroundColor: const Color(0xffFEF6DB),
+        appBar: AppBar(
+          backgroundColor: const Color(0xff46322B),
+          title: const Text(
+            "Toku",
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+      ),
     );
   }
 }
