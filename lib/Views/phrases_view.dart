@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:language_learning_app/Models/item_model.dart';
-import 'package:language_learning_app/Widgets/list_item.dart';
+import 'package:language_learning_app/Widgets/phrases_item.dart';
 
 class PhrasesView extends StatelessWidget {
   const PhrasesView({super.key});
